@@ -1,39 +1,29 @@
 const util = require('util');
-const child_process = require('child_process');
-const exec = util.promisify(child_process.exec);
+const exec = util.promisify(require('child_process').exec);
 
 
-const gitAddAll = () => exec('git add -A');
+const runCommand = async (command) => {
+    const {stdout, stderr} = await exec(command);
 
-const gitCommit = () => exec(`git commit -m "${Date.now()}"`);
+    if (stderr.toString().length > 0) {
+        console.error(`"${command}" threw an error: \n${stderr.toString()}`);
+        process.exit(1);
+    }
+
+    console.log(`"${command}" output the following: \n${stdout.toString()}`)
+};
+
 
 const gitAddAndCommitAll = async () => {
     try {
-        const {stdout, stderr} = await gitAddAll();
-
-        if (stderr.toString().length > 0) {
-            console.error('git add all error:\n' + stderr.toString());
-            return;
-        }
-
-        console.log('git add all output:\n' + stdout.toString());
-
-        const response = await gitCommit();
-
-        if (response.stderr.toString().length > 0) {
-            console.error('git commit error:\n' + response.stderr.toString());
-            return;
-        }
-
-        console.log('git commit output:\n' + response.stdout);
+        await runCommand('git add -A');
+        await runCommand(`git commit -m "automatic update at ${Date.now()}"`);
 
     } catch (err) {
         console.error('error committing changes to git');
     }
 };
 
-module.exports = (async function () {
-    return await gitAddAndCommitAll();
-})();
+module.exports = (async () => await gitAddAndCommitAll())();
 
 
