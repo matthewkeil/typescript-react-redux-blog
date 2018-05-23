@@ -8,13 +8,13 @@ import * as util   from 'util';
 
 
 import {db} from '../../src/index';
-
-import {
-    TokenPayload,
-    Token
-}                       from '../../../client/src/models/Auth';
-import {SerializedUser} from '../../../client/src/models/User';
-
+//
+// import {
+//     TokenPayload,
+//     Token
+// }                       from '../../../client/src/models/Auth';
+// import {SerializedUser} from '../../../client/src/models/User';
+//
 
 
 

@@ -22,7 +22,6 @@ const gitAddAndCommitAll = async () => {
 
         if (response.stderr.toString().length > 0) {
             console.error('git commit error:\n' + response.stderr.toString());
-            await exec('git reset');
             return;
         }
 

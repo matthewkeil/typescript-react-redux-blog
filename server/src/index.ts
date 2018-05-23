@@ -60,7 +60,7 @@ MongoClient.connect(DB_URL, (err: Error, client: MongoClient) => {
     // app.use(authRouter);
     // app.use(authentication);
     // app.use(router);
-    app.use((req, res, next) => res.status(200).send('<h1>OK IT WORKS</h1>'));
+    app.use((req, res) => res.send('<h1>OK IT WORKS</h1>'));
 
     const server = http.createServer(app);
 

@@ -1,4 +1,4 @@
 
-export interface SerializedUser {
-
-}
+// export interface SerializedUser {
+//
+// }

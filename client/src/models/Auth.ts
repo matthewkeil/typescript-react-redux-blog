@@ -1,8 +1,8 @@
-
-export type Token = string;
-
-export type TokenPayload = {
-    id: string;
-    email: string;
-    admin?: boolean;
-};
+//
+// export type Token = string
+//
+// export interface TokenPayload {
+//     id: string;
+//     email: string;
+//     admin?: boolean;
+// }
