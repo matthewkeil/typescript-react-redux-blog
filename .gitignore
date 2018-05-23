@@ -5,17 +5,23 @@
 /client/node_modules
 /server/node_modules
 
-# development
+# IDE
 /.idea
+/server/.idea
+/client/.idea
 /.vscode
-/.build
-/.db
+/server/.vscode
+/client/.vscode
+
+# development
+/server/.build
+/server/.db
 
 # production
 /dist
 
 # test results
-/test/results
+/server/test/results
 
 # misc
 .DS_Store

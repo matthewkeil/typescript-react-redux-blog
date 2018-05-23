@@ -11,7 +11,10 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:unit & npm run test:e2e & npm run test:coverage",
+    "test:coverage": "",
+    "test:unit": "",
+    "test:e2e": ""
   },
   "bugs": {
     "url": "https://github.com/matthewkeil/typescript-react-redux-blog/issues"
@@ -29,5 +32,11 @@
     "mocha",
     "chai",
     "sinon"
-  ]
+  ],
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "ts-node": "^6.0.3",
+    "typescript": "^2.8.3"
+  }
 }
