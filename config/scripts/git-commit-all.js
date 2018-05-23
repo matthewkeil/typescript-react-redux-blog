@@ -17,7 +17,7 @@ const runCommand = async (command) => {
 const gitAddAndCommitAll = async () => {
     try {
         await runCommand('git add -A');
-        await runCommand(`git commit -m "automatic update at ${Date.now()}"`);
+        await runCommand(`git commit -m 'automatic update at ${new Date.toString()}'`);
 
     } catch (err) {
         console.error('error committing changes to git');
