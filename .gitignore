@@ -1,27 +1,27 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/client/node_modules
-/server/node_modules
+node_modules
+client/node_modules
+server/node_modules
 
 # IDE
-/.idea
-/server/.idea
-/client/.idea
-/.vscode
-/server/.vscode
-/client/.vscode
+.idea
+server/.idea
+client/.idea
+.vscode
+server/.vscode
+client/.vscode
 
 # development
-/server/.build
-/server/.db
+server/.build
+server/.db
 
 # production
-/dist
+dist
 
 # test results
-/server/test/results
+server/test/results
 
 # misc
 .DS_Store
