@@ -1,0 +1,33 @@
+{
+  "name": "typescript-react-redux-blog",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewkeil/typescript-react-redux-blog.git"
+  },
+  "description": "React/Express Blog in Typescript",
+  "author": "Matthew Keil",
+  "homepage": "https://homodigit.us/programming/projects",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/matthewkeil/typescript-react-redux-blog/issues"
+  },
+  "keywords": [
+    "typescript",
+    "es6",
+    "react",
+    "redux",
+    "redux-observable",
+    "express",
+    "passport",
+    "mongodb",
+    "jest",
+    "mocha",
+    "chai",
+    "sinon"
+  ]
+}

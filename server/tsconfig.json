@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "../",
+    "outDir": "../.build",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "es6",
+      "es2015",
+      "es2017",
+      "esnext"
+    ],
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "../client/src/models/**/*"
+  ],
+  "exclude": [
+    ".build",
+    ".db",
+    "no_compile",
+    "node_modules"
+  ]
+}
