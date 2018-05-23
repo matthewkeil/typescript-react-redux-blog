@@ -14,7 +14,7 @@
     "start:client": "cd client && npm run start",
     "start:server": "cd server && npm run start",
     "start": "npm run start:server & npm run start:client",
-    "git:commit:all": "node config/scripts/git-commit-all.js",
+    "git:commit:all": "node config/scripts/git-commit-all",
     "test": "npm run test:unit & npm run test:e2e & npm run test:coverage",
     "test:coverage": "",
     "test:unit": "",
