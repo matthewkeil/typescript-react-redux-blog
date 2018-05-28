@@ -42,5 +42,8 @@
     "mocha": "^5.2.0",
     "ts-node": "^6.0.3",
     "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "npm": "^6.1.0"
   }
 }

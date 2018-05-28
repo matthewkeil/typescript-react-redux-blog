@@ -1,4 +1,9 @@
+export interface ISerializedUser {
+    id: string;
 
-// export interface SerializedUser {
-//
-// }
+    email: string;
+
+    username: string;
+
+    avatar: string;
+}
